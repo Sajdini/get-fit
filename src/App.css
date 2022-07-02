@@ -18,6 +18,12 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 48.12em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 h1 {
   font-size: 5.653rem;
 }
@@ -28,10 +34,10 @@ h3 {
   font-size: 2.827rem;
 }
 span {
-  font-size: 2.25rem;
+  font-size: 1.999rem;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.414rem;
 }
 
 h1,
@@ -54,8 +60,13 @@ body {
 }
 
 .App {
-  /* width: 100%;
-  max-width: 105rem;*/
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 3rem 1rem 2rem;
 }
 
 .above-line::after {

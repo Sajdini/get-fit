@@ -1,6 +1,7 @@
 import React from "react";
 import "./Nav.css";
-import logo from "../../icons/logo.png";
+import logo from "../../assets/icons/logo.png";
+import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className="nav-container">
@@ -9,8 +10,12 @@ const Nav = () => {
           <img src={logo} alt="dumbell" />
         </div>
         <div className="nav-Links">
-          <a className="outline above-line">Home</a>
-          <a className="outline above-line">Lets rock and roll</a>
+          <Link to="/" className="outline above-line">
+            <span>Home</span>
+          </Link>
+          <a href="#excercises" className="outline above-line">
+            <span>Lets rock and roll</span>
+          </a>
         </div>
       </div>
     </nav>
