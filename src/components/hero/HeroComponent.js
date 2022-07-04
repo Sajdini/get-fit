@@ -3,7 +3,7 @@ import "./HeroComponents.css";
 import heroImg from "../../assets/images/hero1-img.jpg";
 const HeroComponent = () => {
   return (
-    <div className="hero">
+    <section className="hero container">
       <div className="hero-title_and-text">
         <h1>The best free training guide out there</h1>
         <div>
@@ -12,13 +12,13 @@ const HeroComponent = () => {
             mentorship
           </span>
 
-          <a>Start Now</a>
+          <a href="#">Start Now</a>
         </div>
       </div>
       <div className="hero-image">
         <img src={heroImg} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

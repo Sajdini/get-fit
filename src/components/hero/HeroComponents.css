@@ -44,11 +44,20 @@
 
 @media (max-width: 48.12em) {
   .hero-image {
-    display: none;
+    max-width: 25rem;
+    max-height: 25rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
   }
 
   .hero-title_and-text {
     max-width: 100%;
+    gap: 36rem;
+    padding-top: 2rem;
   }
   .hero-title_and-text h1 {
     text-align: center;
@@ -58,7 +67,13 @@
   .hero-title_and-text div {
     align-self: center;
   }
-  a {
-    margin: 0 auto;
+  .hero-title_and-text a {
+    margin: 1rem auto 0;
+  }
+}
+
+@media (max-width: 27.35em) {
+  .hero-image {
+    top: 15rem;
   }
 }
