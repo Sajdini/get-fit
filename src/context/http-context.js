@@ -41,10 +41,10 @@ export const Provider = (props) => {
 
   console.log(data);
 
-  const value = [data, isLoading, error];
-
   return (
-    <HttpContext.Provider value={value}>{props.children}</HttpContext.Provider>
+    <HttpContext.Provider value={{ data, isLoading, error }}>
+      {props.children}
+    </HttpContext.Provider>
   );
 };
 export default HttpContext;
