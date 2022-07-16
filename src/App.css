@@ -103,3 +103,10 @@ body {
   width: 90%;
   border-top: 2px solid rgba(72, 92, 131, 0.822);
 }
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
