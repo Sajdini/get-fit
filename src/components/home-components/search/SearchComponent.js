@@ -1,11 +1,15 @@
 import React from "react";
-import CardsContainer from "./CardsContainer";
-import "./Excercises.css";
-import SearchForm from "./SearchForm";
+import CardsContainer from "../bodypart-cards/CardsContainer";
 
+import SearchForm from "./SearchForm";
+import "./Search.css";
 const SearchComponent = () => {
   return (
-    <section className="excercises " style={{ paddingTop: "2rem" }}>
+    <section
+      id="excercises"
+      className="excercises "
+      style={{ paddingTop: "2rem" }}
+    >
       <div className="container">
         <div className="backdrop">
           <SearchForm />

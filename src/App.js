@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.css";
-import Nav from "./components/nav/Nav";
+import Navigation from "./components/nav/Navigation";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Excercises from "./pages/Excercises";
+import Excercise from "./pages/Excercise";
 
+import HttpContext from "./context/http-context";
 function App() {
-  console.log(
-    process.env.REACT_APP_API_PATH,
-    process.env.REACT_APP_FETCH_API_KEY
-  );
-
+  const isFetched = useContext(HttpContext).isFetched;
+  console.log(isFetched);
   return (
     <>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/list/:excerciseList" element={<Excercises />} />
-      </Routes>
+      <Navigation>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {isFetched && (
+            <Route path="/list/:excerciseList" element={<Excercises />} />
+          )}
+          {isFetched && <Route path="/excercise/:id" element={<Excercise />} />}
+        </Routes>
+      </Navigation>
     </>
   );
 }

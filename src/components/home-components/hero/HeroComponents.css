@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  padding-bottom: 18rem;
 }
 .hero-title_and-text {
   color: #ccc;
@@ -47,7 +48,7 @@
     max-width: 25rem;
     max-height: 25rem;
     top: 0;
-    bottom: 0;
+    bottom: 10rem;
     right: 0;
     left: 0;
     margin: auto;
@@ -74,6 +75,16 @@
 
 @media (max-width: 27.35em) {
   .hero-image {
-    top: 15rem;
+    top: 5rem;
+  }
+
+  .hero-title_and-text h1 {
+    font-size: 4.5rem;
+  }
+  .hero-title_and-text div {
+    text-align: center;
+  }
+  .hero-title_and-text span {
+    margin: 0 auto;
   }
 }
