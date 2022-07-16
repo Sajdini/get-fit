@@ -87,10 +87,6 @@ body {
   padding: 0 1rem;
 }
 
-.layout {
-  padding: 3rem 0 2rem;
-}
-
 .above-line::after {
   content: "";
   position: absolute;

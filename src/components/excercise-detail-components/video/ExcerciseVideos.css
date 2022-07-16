@@ -1,0 +1,67 @@
+.videos-section {
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.videos-section h3 {
+  margin-left: 5.5rem;
+  color: #ddd;
+  text-transform: capitalize;
+}
+
+.videos-container {
+  max-width: 125rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(72, 92, 131, 0.822);
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.video {
+  width: 25rem;
+}
+
+.video a {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumbnail {
+  height: 20rem;
+  position: relative;
+}
+
+.video-thumbnail::before {
+  border-radius: 8px;
+  overflow: hidden;
+  content: attr(data-content);
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 300ms ease-in-out;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.video-thumbnail:hover:before {
+  background-color: #000;
+  transform: scale(1.1);
+  color: #ddd;
+}
+
+.video-thumbnail img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

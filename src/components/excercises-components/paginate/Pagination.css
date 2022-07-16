@@ -1,0 +1,29 @@
+.paginate-container {
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.paginate-indicator {
+  padding: 1rem;
+  border-radius: 15px;
+  color: #ddd;
+  border: 1px solid #fff;
+}
+svg {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 1px;
+  transition: all 300ms;
+}
+svg:hover {
+  background-color: #ddd;
+  fill: rgba(2, 0, 36, 1);
+}

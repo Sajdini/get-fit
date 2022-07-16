@@ -1,6 +1,7 @@
 import React from "react";
-import { cardData } from "../../assets/data";
+import { cardData } from "../../../assets/data";
 import CardItem from "./CardItem";
+import "./BodyPartCard.css";
 const CardsContainer = () => {
   return (
     <>

@@ -1,0 +1,29 @@
+.suggestions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  align-items: center;
+  margin: 0 auto 5rem;
+  position: relative;
+}
+
+.suggestion-container {
+  width: 100%;
+  max-width: 125rem;
+  padding: 0 1rem;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 125rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  background: rgba(72, 92, 131, 0.822);
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
